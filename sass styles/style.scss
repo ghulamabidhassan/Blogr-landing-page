@@ -190,6 +190,14 @@ footer {
   }
 }
 
+.rotate {
+  transform: rotate(180deg);
+}
+
+.active {
+  display: block;
+}
+
 @media screen and (width < 1366px) {
   body {
     height: 100vh;
@@ -327,6 +335,39 @@ footer {
         }
       }
     }
+  }
+
+  .menu {
+    position: relative;
+  }
+
+  .overlay {
+    background-color: white;
+    opacity: 1;
+    padding: 1em 1.5em;
+    border-radius: 0.5em;
+    position: absolute;
+    top: 2em;
+    left: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: none;
+
+    li {
+      list-style-type: none;
+      color: $Very-dark-blue-headings;
+      margin: 0.75em 1em 0.5em 0.35em;
+      color: black;
+      width: fit-content;
+      transition: 200ms ease-in-out;
+
+      &:hover {
+        color: $Grayish-blue-footer-text;
+      }
+    }
+  }
+
+  .overlay-active {
+    display: block;
   }
 
   .header-content {

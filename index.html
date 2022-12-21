@@ -15,7 +15,7 @@
     <title>Blogr Landing Page</title>
   </head>
   <body>
-    <h2 class="width-heading">Please View on Device WIDTH more than 1366px</h2>
+    <h2 class="width-heading">Your device width is less than 1366px</h2>
     <div class="main" role="main">
       <div class="container">
         <header class="header">
@@ -32,24 +32,38 @@
                   <img src="./images/logo.svg" alt="" class="logo" />
                 </div>
                 <div class="menus">
-                  <p class="menu">
+                  <div class="menu">
                     Product
                     <span class="arrow"
-                      ><img src="./images/icon-arrow-light.svg" alt=""
+                      ><img
+                        class="arrows"
+                        src="./images/icon-arrow-light.svg"
+                        alt=""
                     /></span>
-                  </p>
-                  <p class="menu">
+                  </div>
+                  <div class="menu">
                     Company
                     <span class="arrow"
-                      ><img src="./images/icon-arrow-light.svg" alt=""
+                      ><img
+                        class="arrows"
+                        src="./images/icon-arrow-light.svg"
+                        alt=""
                     /></span>
-                  </p>
-                  <p class="menu">
+                  </div>
+                  <div class="menu">
                     Connect
                     <span class="arrow"
-                      ><img src="./images/icon-arrow-light.svg" alt=""
+                      ><img
+                        class="arrows"
+                        src="./images/icon-arrow-light.svg"
+                        alt=""
                     /></span>
-                  </p>
+                    <div class="overlay">
+                      <li>Contact</li>
+                      <li>Newsletter</li>
+                      <li>LinkedIn</li>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="right">
@@ -189,5 +203,6 @@
         </footer>
       </div>
     </div>
+    <script src="./app.js"></script>
   </body>
 </html>
